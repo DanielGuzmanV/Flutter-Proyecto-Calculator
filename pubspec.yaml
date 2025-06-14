@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_fonts: ^6.2.1
+  math_expressions: ^2.6.0
 
 dev_dependencies:
   flutter_test:
