@@ -20,10 +20,9 @@ class CalculateButtons extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-        color: valueColors ?? const Color(0xFF515667),
         border: Border.all(
           color: const Color.fromARGB(255, 35, 35, 35),
-          width: 2,
+          width: 1,
         ),
         borderRadius: BorderRadius.circular(25)
       ),
@@ -32,8 +31,11 @@ class CalculateButtons extends StatelessWidget {
         width: 50,
         height: 50,
         child: TextButton(
+          
+          // Funciones para los botones:
           onPressed: () => (valueCallBack(valueText)), 
           style: TextButton.styleFrom(
+            backgroundColor: valueColors ?? const Color(0xFF515667),
             foregroundColor: Colors.white,
             padding: const EdgeInsets.all(5),
             textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)
